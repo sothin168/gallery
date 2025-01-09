@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body class="">
+    <section id="header" class="header sticky-top shawdow-bottom">
+    </section>
+
+    <section>
+        <div class="container-lg container-fluid py-4">
+            <div class="d-flex justify-content-start">
+                <button type="button" onclick="window.history.back()"
+                    class="bg-transparent text-white border-0 d-flex justify-content-start align-items-center border-bottom">
+                    <i class='bx bx-arrow-back'></i>
+                    <span>Back</span>
+                </button>
+            </div>
+            <div class="text-center py-3">
+                <h1 class="text-uppercase">View</h1>
+                <p class="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam iure quam ducimus veritatis cum quasi alias cumque
+                    laborum vero illo optio distinctio, qui labore laudantium accusamus omnis suscipit quisquam reiciendis.</p>
+            </div>
+            <div class="image-wrapper row">
+                <div class="col-12 col-md-6">
+                    <img src="" class="w-100" id="view-image">
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="py-0 px-4">
+                        <h3 id="title"></h3>
+                        <h5 class="fw-normal pt-2 text-justify" id="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+                            beatae quis fuga id, facere nostrum in animi, commodi distinctio similique nihil nemo molestias! Reprehenderit autem quasi
+                            deserunt vero quo et.</h5>
+                    </div>
+                </div>
+                <div class="col-12 mt-2">
+                    <div class="additional my-2 border-bottom">
+                        <h2>Additional</h2>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td width="30%">Width</td>
+                                <td width="%">: </td>
+                                <td>
+                                    <span id="imgWidth">2080</span>
+                                    <span> px</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="30%">Height</td>
+                                <td width="%">: </td>
+                                <td>
+                                    <span id="imgHeight">2080</span>
+                                    <span> px</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="30%">Size</td>
+                                <td width="%">: </td>
+                                <td>
+                                    <span id="imgSize">117 kb</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="30%">location</td>
+                                <td width="%">: </td>
+                                <td>
+                                    <span id="location"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="30%">TimeStamp</td>
+                                <td width="%">: </td>
+                                <td>
+                                    <span id="takedate"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td width="30%">Photographer</td>
+                                <td width="%">: </td>
+                                <td>
+                                    Chhorn Chakriya
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-lg container-fluid">
+            <div class="text-center py-3">
+                <h1 class="text-uppercase border-bottom">Review</h1>
+            </div>
+            <div class="review-container row"></div>
+            <div class="text-center py-3">
+                <h3 class="text-uppercase mt-4">Comment</h3>
+            </div>
+            <div class="review-form row justify-content-center">
+                <div class="col-10">
+                    <div class="form-group">
+                        <div class="text-center">
+                            <h5 class="fw-normal">Rate</h5>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <ul class="list-unstyled d-flex justify-content-center">
+                                <li>
+                                    <i class='bx bxs-star text-secondary fs-4'></i>
+                                </li>
+                                <li>
+                                    <i class='bx bxs-star text-secondary fs-4'></i>
+                                </li>
+                                <li>
+                                    <i class='bx bxs-star text-secondary fs-4'></i>
+                                </li>
+                                <li>
+                                    <i class='bx bxs-star text-secondary fs-4'></i>
+                                </li>
+                                <li>
+                                    <i class='bx bxs-star text-secondary fs-4'></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-center">
+                            <h5 class="fw-normal">Name</h5>
+                        </div>
+                        <input type="text" name="name" class=" rounded-0 form-control" placeholder="your name" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <div class="text-center">
+                            <h5 class="fw-normal">Comment</h5>
+                        </div>
+                        <textarea name="comment" rows="4" class=" rounded-0 form-control" placeholder="comment" autocomplete="off"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-submit btn-lg rounded-0 px-5 ">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container-lg container-fluid">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                </ul>
+                <p class="text-center text-secondary">© 2024 Company, Inc</p>
+            </footer>
+        </div>
+    </section>
+    <script src="../public/js/bootstrap.bundle.min.js"></script>
+    <script src="../public/js/swiper-element-bundle.min.js"></script>
+    <script src="../public/js/chance.min.js"></script>
+    <script src="../public/js/jquery.min.js"></script>
+    <script src="../public/js/script.js"></script>
+</body>
+
+</html>
